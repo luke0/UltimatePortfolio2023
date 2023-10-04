@@ -11,6 +11,11 @@
 		897C40072AAE63BB00D33379 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C40062AAE63BB00D33379 /* ContentView.swift */; };
 		897C40092AAE63BC00D33379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897C40082AAE63BC00D33379 /* Assets.xcassets */; };
 		897C400D2AAE63BC00D33379 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897C400C2AAE63BC00D33379 /* Preview Assets.xcassets */; };
+		897CE9822ACDFA5300DBCF85 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 897CE9802ACDFA5300DBCF85 /* Main.xcdatamodeld */; };
+		897CE9842ACDFC7200DBCF85 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CE9832ACDFC7100DBCF85 /* DataController.swift */; };
+		897CE9872ACE042F00DBCF85 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CE9862ACE042F00DBCF85 /* SidebarView.swift */; };
+		897CE9892ACE043400DBCF85 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CE9882ACE043400DBCF85 /* DetailView.swift */; };
+		897CE98B2ACE058300DBCF85 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897CE98A2ACE058300DBCF85 /* Filter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,12 @@
 		897C40082AAE63BC00D33379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		897C400A2AAE63BC00D33379 /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
 		897C400C2AAE63BC00D33379 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		897CE9812ACDFA5300DBCF85 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		897CE9832ACDFC7100DBCF85 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		897CE9852ACE034700DBCF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		897CE9862ACE042F00DBCF85 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		897CE9882ACE043400DBCF85 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		897CE98A2ACE058300DBCF85 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +63,17 @@
 		897C40032AAE63BB00D33379 /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
-				897C40042AAE63BB00D33379 /* UltimatePortfolioApp.swift */,
-				897C40062AAE63BB00D33379 /* ContentView.swift */,
+				897CE9852ACE034700DBCF85 /* Info.plist */,
 				897C40082AAE63BC00D33379 /* Assets.xcassets */,
-				897C400A2AAE63BC00D33379 /* UltimatePortfolio.entitlements */,
+				897C40062AAE63BB00D33379 /* ContentView.swift */,
+				897CE9862ACE042F00DBCF85 /* SidebarView.swift */,
+				897CE9882ACE043400DBCF85 /* DetailView.swift */,
+				897CE9802ACDFA5300DBCF85 /* Main.xcdatamodeld */,
+				897CE9832ACDFC7100DBCF85 /* DataController.swift */,
 				897C400B2AAE63BC00D33379 /* Preview Content */,
+				897C400A2AAE63BC00D33379 /* UltimatePortfolio.entitlements */,
+				897C40042AAE63BB00D33379 /* UltimatePortfolioApp.swift */,
+				897CE98A2ACE058300DBCF85 /* Filter.swift */,
 			);
 			path = UltimatePortfolio;
 			sourceTree = "<group>";
@@ -139,6 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897CE98B2ACE058300DBCF85 /* Filter.swift in Sources */,
+				897CE9822ACDFA5300DBCF85 /* Main.xcdatamodeld in Sources */,
+				897CE9892ACE043400DBCF85 /* DetailView.swift in Sources */,
+				897CE9842ACDFC7200DBCF85 /* DataController.swift in Sources */,
+				897CE9872ACE042F00DBCF85 /* SidebarView.swift in Sources */,
 				897C40072AAE63BB00D33379 /* ContentView.swift in Sources */,
 				897C40052AAE63BB00D33379 /* UltimatePortfolioApp.swift in Sources */,
 			);
@@ -269,6 +291,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,6 +330,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -354,6 +378,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		897CE9802ACDFA5300DBCF85 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				897CE9812ACDFA5300DBCF85 /* Main.xcdatamodel */,
+			);
+			currentVersion = 897CE9812ACDFA5300DBCF85 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 897C3FF92AAE63BB00D33379 /* Project object */;
 }
